@@ -224,14 +224,14 @@ export default function Page() {
                   </div>
                 }
               >
-                {/* 3D Card Content (Emerald Mockup) */}
+                {/* 3D Card Content (Digital Transformation Visual) */}
                 <div className="relative w-full h-full group">
                   <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none z-10" />
                   <Image 
-                    src="/autonomix_emerald_hero.png"
-                    alt="Autonomix AI Platform Mockup"
+                    src="/digital_transformation.png"
+                    alt="Digitalizing Offline Businesses Concept"
                     fill
-                    className="object-cover object-top transition-transform duration-1000 group-hover:scale-105"
+                    className="object-cover object-center transition-transform duration-1000 group-hover:scale-105"
                     priority
                   />
                 </div>
