@@ -1,5 +1,5 @@
 "use client";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/page";
 import { useLenisScroll } from "@/hooks/useLenisScroll";
@@ -8,6 +8,19 @@ import CustomCursor from "@/commonComponent/cursor/CustomCursor";
 import { useEffect } from "react";
 import Template from "./template";
 import { usePathname } from "next/navigation";
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
 
 export default function RootLayout({ children }) {
   useLenisScroll();
@@ -53,7 +66,7 @@ export default function RootLayout({ children }) {
   ];
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${plusJakarta.variable} ${outfit.variable}`}>
       <head>
         <link rel="icon" href="/logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/logo.png" />

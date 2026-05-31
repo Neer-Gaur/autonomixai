@@ -55,13 +55,13 @@ export default function Page() {
 
     // Fade out text container on scroll (both mobile and desktop)
     gsap.to(textContainerRef.current, {
-      y: isMobile ? "-10%" : "-20%",
+      y: isMobile ? -50 : -80,
       opacity: 0,
-      ease: "none",
+      ease: "power1.out",
       scrollTrigger: {
         trigger: heroRef.current,
         start: "top top",
-        end: "bottom 30%",
+        end: "350px top",
         scrub: true,
       }
     });
@@ -144,9 +144,9 @@ export default function Page() {
                 {/* Main Heading */}
                 <div className="w-full mb-6">
                   <Copy animateOnScroll={false}>
-                    <h1 className="text-[5vw] md:text-[1.5vw] leading-[6vw] md:leading-[2.0vw] tracking-tight text-zinc-900 font-bold font-heading">
-                      Transforming <span className="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">offline businesses</span> <br className="hidden md:block" />
-                      into powerful <span className="bg-gradient-to-r from-teal-600 to-cyan-500 bg-clip-text text-transparent">online digital assets.</span>
+                    <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-[-0.03em] leading-[1.1] text-zinc-900 font-heading normal-case">
+                      Transforming <span className="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">Offline Businesses</span> <br className="hidden md:block" />
+                      into Powerful <span className="bg-gradient-to-r from-teal-600 to-cyan-500 bg-clip-text text-transparent">Online Digital Assets.</span>
                     </h1>
                   </Copy>
                 </div>
@@ -154,7 +154,7 @@ export default function Page() {
                 {/* Subtitle / Copy */}
                 <div className="w-full mb-10">
                   <Copy animateOnScroll={false} delay={0.2}>
-                    <h4 className="text-zinc-505 text-justify text-[3.2vw] md:text-[0.75vw] leading-[4.8vw] md:leading-[1.15vw] max-w-[90%] font-normal font-sans normal-case">
+                    <h4 className="text-zinc-500 text-justify text-base sm:text-lg md:text-xl leading-relaxed max-w-[90%] font-normal font-sans normal-case">
                       We engineer high-performance digital products, custom AI applications, and premium web ecosystems that turn operational challenges into powerful growth engines and bottom-line margins.
                     </h4>
                   </Copy>

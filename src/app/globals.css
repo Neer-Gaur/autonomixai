@@ -4,14 +4,11 @@
   --background: #E6E6E6;
   --foreground: #171717;
   --text-color: #2C2C2C;
-  --heading: 'heading';
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --font-sans: var(--font-sans), sans-serif;
+  --font-heading: var(--font-heading), sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,20 +22,10 @@
 body {
   background-color: var(--background) !important;
   color: var(--text-color);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), sans-serif;
   margin: 0;
   padding: 0;
   min-height: 100vh;
-}
-
-@font-face {
-  font-family: 'heading';
-  src: url("../fonts/SPACEGROTESK-VARIABLEFONT_WGHT.TTF");
-}
-
-@font-face {
-  font-family: smallheading;
-  src: url("../fonts/static/Geist-Regular.ttf");
 }
 
 h1,button,p{
@@ -51,35 +38,33 @@ Image{
 
 h1,h2,h3,h4, a{
   text-transform: capitalize;
-  
 }
-
 
 h1{
   font-size: 5vw;
-  font-family: heading;
+  font-family: var(--font-heading), sans-serif;
   line-height: 5vw;
   font-weight: 900;
 }
 
 h3{
-  font-family: smallheading;
+  font-family: var(--font-sans), sans-serif;
   font-size: 3.2vw;
 }
 
 h4{
-  font-family: smallheading;
+  font-family: var(--font-sans), sans-serif;
   font-size: 1.2vw;
 }
 
 h2{
-  font-family: heading;
+  font-family: var(--font-heading), sans-serif;
   font-size: 2vw;
   line-height: 2.1vw;
 }
 
 p{
-  font-family: smallheading;
+  font-family: var(--font-sans), sans-serif;
   font-size: .9vw;
   line-height: 1vw;
 }
