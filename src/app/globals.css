@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+:root {
+  --background: #E6E6E6;
+  --foreground: #171717;
+  --text-color: #2C2C2C;
+  --heading: 'heading';
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f9f9f9;
+    --foreground: #171717;
+    --text-color: #2C2C2C;
+  }
+}
+
+body {
+  background-color: var(--background) !important;
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'heading';
+  src: url("../fonts/SPACEGROTESK-VARIABLEFONT_WGHT.TTF");
+}
+
+@font-face {
+  font-family: smallheading;
+  src: url("../fonts/static/Geist-Regular.ttf");
+}
+
+h1,button,p{
+  z-index: 11;
+}
+
+Image{
+  z-index: 10;
+}
+
+h1,h2,h3,h4, a{
+  text-transform: capitalize;
+  
+}
+
+
+h1{
+  font-size: 5vw;
+  font-family: heading;
+  line-height: 5vw;
+  font-weight: 900;
+}
+
+h3{
+  font-family: smallheading;
+  font-size: 3.2vw;
+}
+
+h4{
+  font-family: smallheading;
+  font-size: 1.2vw;
+}
+
+h2{
+  font-family: heading;
+  font-size: 2vw;
+  line-height: 2.1vw;
+}
+
+p{
+  font-family: smallheading;
+  font-size: .9vw;
+  line-height: 1vw;
+}
+
+.transparent{
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.testimonials{
+  color:#000000
+}
+/* Mobile Responsive Font Sizes */
+@media screen and (max-width: 768px) {
+ 
+  h1 {
+    font-size: 13vw;
+    line-height: 13vw;
+  }
+
+  h2 {
+    font-size: 8vw;
+    line-height: 8.5vw;
+  }
+
+  h3 {
+    font-size: 7vw;
+  }
+
+  h4 {
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 3.5vw;
+    line-height: 4vw;
+  }
+}
+
+
+Footer{
+  /* background-color: #FF5151; */
+  /* color: #dadada; */
+}
+
+/* Custom Selection Color */
+::selection {
+  background-color: rgb(43, 43, 45); /* bg-zinc-950 */
+  color: white;
+}
+
+::-moz-selection {
+  background-color: rgb(24 24 27); /* bg-zinc-950 */
+  color: white;
+}
+
+
+
+@layer utilities {
+  .animate-scroll {
+    animation: scroll var(--animation-duration, 40s) linear infinite;
+    animation-direction: var(--animation-direction, forwards);
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-50% - 0.5rem));
+    }
+  }
+}
+
+
+
+

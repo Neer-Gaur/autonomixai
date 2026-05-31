@@ -1,0 +1,45 @@
+<div className="w-full h-full flex items-end justify-end flex-col px-[1vw]  ">
+                {/* pt-[27vw] */}
+                <div className="w-full ">
+                  <div className="w-full h-[55vh]  relative flex  ">
+                    <h1 className=" text-black w-[70%] leading-[9vw] font-[Heading] text-[5.1vw]  capitalize">
+                      we turn customer data into{" "}
+                      <span className="text-white">margin</span>
+                    </h1>
+                    {/* <p className="w-[50%] leading-none  font-[smallHeading]" style={{fontSize:"1.5vw" , lineHeight:"1.5vw"}}>
+                    We turn data into profit, plain and simple. Our approach
+                    pinpoints the crucial identifiers of growth, deploys robust
+                    collection, processing, and storage infrastructure, and
+                    transforms your data into a tangible, profitable product.
+                  </p> */}
+                  </div>
+                </div>
+                <div className="w-full flex items-end justify-between ">
+                  <div className="flex gap-[0.5vw]">
+                    {/* <button className="px-[3vw] py-[1vw]  bg-black text-white text-[0.9vw] rounded-md font-semibold hover:bg-black/[0.8] hover:shadow-lg">
+                    Work with Us
+                  </button> */}
+                    <HoverButton text="work" />
+
+                    {/* <button className="px-[3vw] py-[1vw] text-black backdrop-blur-sm border border-black rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white/[0.2] text-[0.9vw] transition duration-200">
+                    Portfolio
+                  </button> */}
+                    <HoverButton
+                      text="contact"
+                      textSize="text-[1.2vw]"
+                      padding="p-[1vw]"
+                      width="w-[10vw]"
+                      height="h-[3vw]"
+                      bgColor="bg-zinc-50"
+                      arrowColor="bg-zinc-900"
+                    />
+                  </div>
+
+                  <h4 className="w-[30%] text-white leading-none  font-[smallHeading]">
+                    We turn data into profit, plain and simple. Our approach
+                    pinpoints the crucial identifiers of growth, deploys robust
+                    collection, processing, and storage infrastructure, and
+                    transforms your data into a tangible, profitable product.
+                  </h4>
+                </div>
+              </div>
