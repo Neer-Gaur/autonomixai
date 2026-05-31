@@ -2,6 +2,7 @@
   "name": "v7",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -31,5 +32,8 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.14",
     "tailwindcss": "^4"
+  },
+  "engines": {
+    "node": ">=18.17.0"
   }
 }
