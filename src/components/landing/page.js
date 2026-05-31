@@ -228,7 +228,7 @@ export default function Page() {
                 <div className="relative w-full h-full group">
                   <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none z-10" />
                   <Image 
-                    src="/digital_transformation.png"
+                    src="/digital_transformation.jpg"
                     alt="Digitalizing Offline Businesses Concept"
                     fill
                     className="object-cover object-center transition-transform duration-1000 group-hover:scale-105"
